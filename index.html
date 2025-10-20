@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المركز المعماري — معرض أعمال</title>
+  <meta name="description" content="المركز المعماري — معرض أعمال هندسي معماري">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0b1220; --card:#101a2f; --muted:#8ea6c1; --accent:#19c37d; --text:#e9f0f7; --border:rgba(255,255,255,.08); }
+    *{box-sizing:border-box} html,body{margin:0;height:100%}
+    body{font-family:'Cairo',system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#0b1220,#0b1220 60%,#0f172a);color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;gap:12px;padding:18px 24px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(11,18,32,.65);backdrop-filter:blur(6px);z-index:50}
+    header .brand{display:flex;align-items:center;gap:10px}
+    header .brand img{width:44px;height:44px;border-radius:10px;border:1px solid var(--border)}
+    nav{margin-inline-start:auto;display:flex;gap:14px}
+    nav a{padding:8px 12px;border-radius:12px;border:1px solid transparent}
+    nav a:hover{border-color:var(--border);background:rgba(255,255,255,.03)}
+    .hero{padding:56px 24px 30px}
+    .grid-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+    .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:13px}
+    h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:14px 0 10px}
+    .subtitle{color:var(--muted);font-size:18px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+    .btn{padding:12px 16px;border-radius:14px;border:1px solid var(--border);background:#0f1a30}
+    .btn.primary{background:linear-gradient(180deg,#1fe28b,#19c37d);color:#06210f;border:none}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .stat{background:var(--card);border:1px solid var(--border);padding:16px;border-radius:16px;text-align:center}
+    .section{padding:34px 24px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+    .cover{aspect-ratio:16/10;background:#0a0f1c center/cover no-repeat;border-bottom:1px solid var(--border)}
+    .body{padding:14px}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:6px}
+    .actions{margin-top:auto;padding:12px 14px;display:flex;gap:10px;border-top:1px solid var(--border)}
+    footer{border-top:1px solid var(--border);padding:18px 24px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .tile{background:var(--card);border:1px dashed var(--border);border-radius:16px;padding:16px}
+    @media (max-width:880px){ .grid-hero{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr} .contact{grid-template-columns:1fr} .stats{grid-template-columns:1fr 1fr} }
+  </style>
+</head>
+<body>
+<header class="container">
+  <div class="brand">
+    <img src="assets/logo.png" alt="شعار المكتب">
+    <strong>المركز المعماري</strong>
+  </div>
+  <nav>
+    <a href="#projects">المشاريع</a>
+    <a href="#files">ملفات</a>
+    <a href="#contact">تواصل</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container grid-hero">
+    <div>
+      <span class="badge">نسخة مدمجة — تصميم حديث</span>
+      <h1>معرض أعمال هندسي حديث يجمع أفضل ما في الصفحتين</h1>
+      <p class="subtitle">تم تجهيز القالب لرفع الصور والروابط مباشرة. لاحقًا تستطيع التعديل يدويًا بسهولة.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">استعرض المشاريع</a>
+        <a class="btn" href="#contact">تواصل معنا</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div style="font-weight:800;font-size:28px">+25</div><div>مشروع منجز</div></div>
+        <div class="stat"><div style="font-weight:800;font-size:28px">+10</div><div>بانوراما 360</div></div>
+        <div class="stat"><div style="font-weight:800;font-size:28px">2000 m²</div><div>أكبر مشروع منفذ</div></div>
+      </div>
+    </div>
+    <div>
+      <img src="assets/placeholder-cover.png" alt="معاينة" style="border-radius:18px;border:1px solid var(--border)">
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2>المشاريع المميزة</h2>
+    <div class="grid-3">
+      <article class="card">
+        <a class="cover" style="background-image:url('assets/placeholder-cover.png')" href="#"></a>
+        <div class="body">
+          <strong>مشروع 1 — واجهة حديثة</strong>
+          <div class="meta"><span>Basra</span><span>2025</span><span>تصميم معماري</span></div>
+        </div>
+        <div class="actions"><a class="btn" href="#">فتح المشروع</a></div>
+      </article>
+      <article class="card">
+        <a class="cover" style="background-image:url('assets/placeholder-cover.png')" href="#"></a>
+        <div class="body">
+          <strong>مشروع 2 — مركز خدمي</strong>
+          <div class="meta"><span>Safwan</span><span>2024</span><span>تصميم + إشراف</span></div>
+        </div>
+        <div class="actions"><a class="btn" href="#">فتح المشروع</a></div>
+      </article>
+      <article class="card">
+        <a class="cover" style="background-image:url('assets/placeholder-cover.png')" href="#"></a>
+        <div class="body">
+          <strong>مشروع 3 — House in Farm</strong>
+          <div class="meta"><span>Basra</span><span>2025</span><span>واجهة حديثة</span></div>
+        </div>
+        <div class="actions"><a class="btn" href="#">فتح المشروع</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="files" class="section">
+  <div class="container">
+    <h2>ملفات للتحميل</h2>
+    <div class="grid-3">
+      <a class="tile" href="#" download>بروفايل المكتب (PDF)</a>
+      <a class="tile" href="#" download>نموذج جداول كميات (Excel)</a>
+      <a class="tile" href="#" download>بطاقة تواصل (VCF)</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2>تواصل معنا</h2>
+    <div class="contact">
+      <div class="tile">
+        <strong>المركز المعماري</strong><br>
+        Basra — العراق
+      </div>
+      <div class="tile">
+        <div>هاتف / واتساب: <a href="https://wa.me/00964780102" target="_blank">00964780102</a></div>
+        <div>البريد الإلكتروني: <a href="mailto:HASSAN6900@GMAIL.COM">HASSAN6900@GMAIL.COM</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="container">
+  <div>© <span id="y"></span> المركز المعماري — جميع الحقوق محفوظة</div>
+  <div>تم إعداد القالب للرفع على GitHub Pages</div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
