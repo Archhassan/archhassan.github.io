@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>المركز المعماري — معرض أعمال</title>
   <meta name="description" content="المركز المعماري — معرض أعمال هندسي معماري">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -24,7 +24,8 @@
     .hero{padding:56px 24px 30px}
     .grid-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
     .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:13px}
-    h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:14px 0 10px}
+    h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:14px 0 10px;color:#e0b04d}
+    h2{color:#9bc3ff;margin:0 0 8px}
     .subtitle{color:var(--muted);font-size:18px}
     .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
     .btn{padding:12px 16px;border-radius:14px;border:1px solid var(--border);background:#0f1a30}
@@ -32,22 +33,17 @@
     .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
     .stat{background:var(--card);border:1px solid var(--border);padding:16px;border-radius:16px;text-align:center}
     .section{padding:34px 24px}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
-    .cover{aspect-ratio:16/10;background:#0a0f1c center/cover no-repeat;border-bottom:1px solid var(--border)}
-    .body{padding:14px}
-    .meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:13px;margin-top:6px}
-    .actions{margin-top:auto;padding:12px 14px;display:flex;gap:10px;border-top:1px solid var(--border)}
-    footer{border-top:1px solid var(--border);padding:18px 24px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+    footer{border-top:1px solid var(--border);padding:18px 24px;color:var(--muted)}
     .contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
     .tile{background:var(--card);border:1px dashed var(--border);border-radius:16px;padding:16px}
-    @media (max-width:880px){ .grid-hero{grid-template-columns:1fr} .grid-3{grid-template-columns:1fr} .contact{grid-template-columns:1fr} .stats{grid-template-columns:1fr 1fr} }
+    .map{border:1px solid var(--border);border-radius:16px;overflow:hidden}
+    @media (max-width:880px){ .grid-hero{grid-template-columns:1fr} .contact{grid-template-columns:1fr} .stats{grid-template-columns:1fr 1fr} }
   </style>
 </head>
 <body>
 <header class="container">
   <div class="brand">
-    <img src="assets/logo.png" alt="شعار المكتب">
+    <img src="assets/logo.png?v=3" alt="شعار المكتب">
     <strong>المركز المعماري</strong>
   </div>
   <nav>
@@ -60,34 +56,26 @@
 <section class="hero">
   <div class="container grid-hero">
     <div>
-      <span class="badge">نسخة مدمجة — تصميم حديث</span>
-  <!-- العنوان الرئيسي -->
-<h1 style="font-size: 2.5em; color: #e0b04d;">مكتب المركز المعماري</h1>
-
-<!-- العنوان الفرعي -->
-<h2 style="font-size: 1.3em; color: #9bc3ff;">Architectural Center</h2>
-
-<!-- النص التعريفي -->
-<p style="font-size: 1em; color: #ccc;">
-بإدارة المهندس الاستشاري حسن عبد الله جاسم<br>
-نُقدّم التصاميم المعمارية والإنشائية الحديثة بخبرة تمتد لسنوات.
-</p>
-
+      <span class="badge">نسخة محدثة — تصميم حديث</span>
+      <h1>مكتب المركز المعماري</h1>
+      <h2>Architectural Center</h2>
+      <p style="color:#cfd8e3">بإدارة المهندس الاستشاري حسن عبد الله جاسم —
+      نُقدّم التصاميم المعمارية والإنشائية الحديثة بخبرة تمتد لسنوات.</p>
 
       <p style="font-size: 1em; color: #ccc; line-height: 1.8;">
-رؤيتنا أن نُعيد تعريف العمارة الحديثة في العراق بروحٍ تجمع بين الأصالة والإبداع، 
-ونحوّل كل فكرة إلى تصميم نابض بالحياة يترك بصمة جمالية وإنسانية في المكان.
-</p>
-
-<p style="font-size: 0.95em; color: #9bc3ff; font-style: italic; margin-top: 8px;">
-Our vision is to redefine modern architecture in Iraq through creativity and authenticity — 
-transforming every idea into a living design that leaves an aesthetic and human impact.
-</p>
+      رؤيتنا أن نُعيد تعريف العمارة الحديثة في العراق بروحٍ تجمع بين الأصالة والإبداع، 
+      ونحوّل كل فكرة إلى تصميم نابض بالحياة يترك بصمة جمالية وإنسانية في المكان.
+      </p>
+      <p style="font-size: 0.95em; color: #9bc3ff; font-style: italic; margin-top: 8px;">
+      Our vision is to redefine modern architecture in Iraq through creativity and authenticity — 
+      transforming every idea into a living design that leaves an aesthetic and human impact.
+      </p>
 
       <div class="cta">
         <a class="btn primary" href="#projects">استعرض المشاريع</a>
         <a class="btn" href="#contact">تواصل معنا</a>
       </div>
+
       <div class="stats">
         <div class="stat"><div style="font-weight:800;font-size:28px">+25</div><div>مشروع منجز</div></div>
         <div class="stat"><div style="font-weight:800;font-size:28px">+10</div><div>بانوراما 360</div></div>
@@ -95,50 +83,7 @@ transforming every idea into a living design that leaves an aesthetic and human 
       </div>
     </div>
     <div>
-      <img src="assets/placeholder-cover.png" alt="معاينة" style="border-radius:18px;border:1px solid var(--border)">
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <div class="container">
-    <h2>المشاريع المميزة</h2>
-    <div class="grid-3">
-      <article class="card">
-        <a class="cover" style="background-image:url('assets/placeholder-cover.png')" href="#"></a>
-        <div class="body">
-          <strong>مشروع 1 — واجهة حديثة</strong>
-          <div class="meta"><span>Basra</span><span>2025</span><span>تصميم معماري</span></div>
-        </div>
-        <div class="actions"><a class="btn" href="#">فتح المشروع</a></div>
-      </article>
-      <article class="card">
-        <a class="cover" style="background-image:url('assets/placeholder-cover.png')" href="#"></a>
-        <div class="body">
-          <strong>مشروع 2 — مركز خدمي</strong>
-          <div class="meta"><span>Safwan</span><span>2024</span><span>تصميم + إشراف</span></div>
-        </div>
-        <div class="actions"><a class="btn" href="#">فتح المشروع</a></div>
-      </article>
-      <article class="card">
-        <a class="cover" style="background-image:url('assets/placeholder-cover.png')" href="#"></a>
-        <div class="body">
-          <strong>مشروع 3 — House in Farm</strong>
-          <div class="meta"><span>Basra</span><span>2025</span><span>واجهة حديثة</span></div>
-        </div>
-        <div class="actions"><a class="btn" href="#">فتح المشروع</a></div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="files" class="section">
-  <div class="container">
-    <h2>ملفات للتحميل</h2>
-    <div class="grid-3">
-      <a class="tile" href="#" download>بروفايل المكتب (PDF)</a>
-      <a class="tile" href="#" download>نموذج جداول كميات (Excel)</a>
-      <a class="tile" href="#" download>بطاقة تواصل (VCF)</a>
+      <div style="height:340px;border:1px dashed var(--border);border-radius:18px;display:flex;align-items:center;justify-content:center;color:#7f8ea8">منطقة عرض صور/فيديو لاحقًا</div>
     </div>
   </div>
 </section>
@@ -148,12 +93,17 @@ transforming every idea into a living design that leaves an aesthetic and human 
     <h2>تواصل معنا</h2>
     <div class="contact">
       <div class="tile">
-        <strong>المركز المعماري</strong><br>
-        Basra — العراق
+        <strong>العنوان:</strong><br>
+        العراق — محافظة البصرة — الويسة — قرب السوق الجديد
+        <br><br>
+        <strong>هاتف / واتساب:</strong> <a href="https://wa.me/00964780102" target="_blank">00964780102</a><br>
+        <strong>البريد الإلكتروني:</strong> <a href="mailto:HASSAN6900@GMAIL.COM">HASSAN6900@GMAIL.COM</a>
       </div>
-      <div class="tile">
-        <div>هاتف / واتساب: <a href="https://wa.me/00964780102" target="_blank">00964780102</a></div>
-        <div>البريد الإلكتروني: <a href="mailto:HASSAN6900@GMAIL.COM">HASSAN6900@GMAIL.COM</a></div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps?q=30.517667,47.82375&hl=ar&z=16&output=embed"
+          width="100%" height="260" style="border:0" allowfullscreen="" loading="lazy">
+        </iframe>
       </div>
     </div>
   </div>
@@ -161,7 +111,7 @@ transforming every idea into a living design that leaves an aesthetic and human 
 
 <footer class="container">
   <div>© <span id="y"></span> المركز المعماري — جميع الحقوق محفوظة</div>
-  <div>تم إعداد القالب للرفع على GitHub Pages</div>
+  <div>GitHub Pages</div>
 </footer>
 
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
